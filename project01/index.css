@@ -2,6 +2,8 @@ header{
 	background-color:#DCDCDC;
 	position:relative;
 	top:20px;
+	width:1125px;
+	margin-left:55px;
 }
 h1{
 	size:6;
@@ -10,6 +12,7 @@ ul{
 	list-style-type:none;
 	margin:0;
 	padding:0;
+	margin-left:55px;
 }
 li{
 	float:left;
@@ -24,6 +27,7 @@ a:link,a:visited{
 	padding:4px;
 	text-decoration:none;
 	text-transform:uppercase;
+	
 }
 a:hover{
 	display:block;
@@ -38,17 +42,21 @@ a:hover{
 }
 .data{
 	background-color:#FFFFFF;
+	width:1125px;
+	margin-left:55px;
 }
 footer{
 	position:relative;
-	top:-101px;
+	top:-90px;
+	left:55px;
 	background-color:#E6E6FA;
-	
+	width:1125px
 }
 .current{
 	position:relative;
-	top:-250px;
-	left: 800px; 
+	top:-240px;
+	left: 800px;
 	background-color:#E6E6FA;
+	width:300px;
 }
 
