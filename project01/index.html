@@ -2,11 +2,11 @@
 	<head>
 		<title>Life Figure-Outer Application</title>
 		<link href = "index.css" rel = "stylesheet" type = "text/css">
+		<script type="text/javascript" src="index.js"></script>
 	</head>
 	<header>
-		<h3>The Magic Life Figure-Outer!</h3>
+		<b><h1>The Magic Life Figure-Outer!</h1></b>
 		<p>Figuring out your life for you, so you don't have to...</p>
-		<br>
 	</header>
 	<body>
 		<body bgcolor = "#A9A9A9">
@@ -21,12 +21,12 @@
 		</ul>
 		<div class = "data">
 		<br>
-		<h2>Lorem Ipsum Dolor Sit Amet.</h2>
-		<form>
+		<h2><b>Lorem Ipsum Dolor Sit Amet.</b></h2>
+		<form name = "moods" onsubmit = "return validateMood()" method = "post">
 			<table>
 			<tr>
 				<td>How do you feel today?</td> 
-				<td><input type = "text"></td>
+				<td><input type = "text" name = "curMood"></td>
 			</tr>
 			<tr>
 				<td>How would you like to feel? <br>(choose all that apply)</td>
@@ -40,12 +40,16 @@
 			</tr>
 			<tr>
 				<td> </td>
-				<td><input type = "submit" value = "Feel me!"></td>
+				<td><input type = "submit" name = "mood" value = "Feel me!"></td>
 			</tr>
 			</table>
 		</form>
 		<br>
 		<br>
+		</div>
+		<div class = "current">
+			<h3>Current Progress in Life</h3>
+			Mediocre. You really should enjoy life more.
 		</div>
 	</body>
 	<footer>
