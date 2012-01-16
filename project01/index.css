@@ -25,6 +25,17 @@ a:link,a:visited{
 	text-decoration:none;
 	text-transform:uppercase;
 }
+a:hover{
+	display:block;
+	width:120px;
+	font-weight:bold;
+	color:#000000;
+	background-color:#FFFFFF;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
 .data{
 	background-color:#FFFFFF;
 }
