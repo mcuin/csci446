@@ -4,4 +4,4 @@ function validateMood(){
 		alert("Surely you feel something!");
 		return false;
 	}
-}
+} 
