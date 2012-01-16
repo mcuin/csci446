@@ -20,9 +20,10 @@ a:link,a:visited{
 	text-decoration:none;
 	text-transform:uppercase;
 }
-body{
+.data{
 	background-color:#FFFFFF;
 }
 footer{
 	background-color:#E6E6FA;
+	
 }
