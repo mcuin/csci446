@@ -11,9 +11,11 @@ class Player
 			warrior.rest!
 		end
 	else
-		if !warrior.feel.empty?
+		if warrior.feel.captive?
+			warrior.rescue!
+		elsif !warrior.feel.empty?
 			warrior.attack!
-		else 
+		else
 			warrior.walk!
 		end
 	end
