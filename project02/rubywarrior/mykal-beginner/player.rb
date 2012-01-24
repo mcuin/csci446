@@ -1,18 +1,21 @@
 class Player
   def play_turn(warrior)
-	if warrior.health < 20
-		if warrior.health == @health && warrior.health < 20
-			warrior.rest!
+	@curehealth = 10
+	if warrior.health >= 20
+		if warrior.feel.empty?
+			warrior.walk!
 		elsif !warrior.feel.empty?
 			warrior.attack!
-		elsif warrior.health < @health
+		else warrior.health < @health
 			warrior.walk!
-		else 
-			warrior.rest!
 		end
 	else
-		if warrior.feel.captive?
-			warrior.rescue!
+		if warrior.feel(:backward).captive?
+			warrior.rescue!(:backward)
+		elsif warrior.health < @curehealth && !warrior.feel(:backward).wall?
+			warrior.walk!(:backward)
+		elsif warrior.feel(:backward).wall? && warrior.health < 20
+			warrior.rest!
 		elsif !warrior.feel.empty?
 			warrior.attack!
 		else
