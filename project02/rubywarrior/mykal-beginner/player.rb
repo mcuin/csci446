@@ -2,7 +2,9 @@ class Player
   def play_turn(warrior)
 	@curehealth = 10
 	if warrior.health >= 20
-		if warrior.feel.empty?
+		if warrior.feel.wall?
+			warrior.pivot!
+		elsif warrior.feel.empty?
 			warrior.walk!
 		elsif !warrior.feel.empty?
 			warrior.attack!
