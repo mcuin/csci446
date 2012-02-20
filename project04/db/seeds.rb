@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Article.delete_all
+Article.create(title: 'Lorem Ipsum',
+  author_name: 'Robert Frost',
+  body:
+    %{<p>
+	  Robert Frost was born in San Fran
+	</p>},
+  creation_date: 'February 19th, 2012')
