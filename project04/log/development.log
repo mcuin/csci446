@@ -10947,3 +10947,1031 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-02-21 13:34:04 -0700
 Served asset /arrow_left.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 13:36:16 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.erb within layouts/application (519.0ms)
+Completed 200 OK in 835ms (Views: 831.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:30 -0700
+Served asset /articles.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:30 -0700
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:30 -0700
+Served asset /articles.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:30 -0700
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 13:36:30 -0700
+Served asset /script_edit.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 13:36:30 -0700
+Served asset /script_go.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 13:36:30 -0700
+Served asset /script_add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 13:36:30 -0700
+Served asset /script_delete.png - 304 Not Modified (3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-02-21 13:36:38 -0700
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (12.0ms)
+Rendered articles/new.html.erb within layouts/application (105.0ms)
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:39 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:39 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:39 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:39 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:39 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-02-21 13:36:39 -0700
+Served asset /arrow_left.png - 304 Not Modified (3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /script_go.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /script_add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 13:36:40 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered articles/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+Served asset /articles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+Served asset /script_delete.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+Served asset /arrow_left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 13:36:43 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4/edit" for 127.0.0.1 at 2012-02-21 13:36:45 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "4"]]
+Rendered articles/_form.html.erb (11.0ms)
+Rendered articles/edit.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:45 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:45 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:45 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:45 -0700
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:45 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:45 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-02-21 13:36:45 -0700
+Served asset /arrow_left.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 13:36:46 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.erb within layouts/application (127.0ms)
+Completed 200 OK in 152ms (Views: 149.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /script_add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 13:36:47 -0700
+Served asset /script_go.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4/edit" for 127.0.0.1 at 2012-02-21 13:36:53 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "4"]]
+Rendered articles/_form.html.erb (10.0ms)
+Rendered articles/edit.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 106ms (Views: 103.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:53 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:53 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:53 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:53 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-02-21 13:36:53 -0700
+Served asset /arrow_left.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 13:36:54 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 84ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:54 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:54 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:54 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:54 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:54 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:36:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:36:54 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 13:36:55 -0700
+Served asset /script_go.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 13:36:55 -0700
+Served asset /script_add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 13:36:55 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 13:36:55 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-02-21 13:37:12 -0700
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (12.0ms)
+Rendered articles/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:37:12 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:37:12 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:37:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:12 -0700
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:12 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-02-21 13:37:12 -0700
+Served asset /arrow_left.png - 304 Not Modified (0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2012-02-21 13:37:20 -0700
+  Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M40SFd9SoBgjBIaJIqTdQDddt3KUCoUSZ8WeeV2pJN4=", "article"=>{"title"=>"Lorem Ipsum", "author_name"=>"Robert Frost", "body"=>"mdcneocna'cm]\r\nacn'[c'[naq", "creation_date"=>"February, 18, 2012"}, "commit"=>"Create Article"}
+  [1m[35mSQL (89.0ms)[0m  INSERT INTO "articles" ("author_name", "body", "created_at", "creation_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author_name", "Robert Frost"], ["body", "mdcneocna'cm]\r\nacn'[c'[naq"], ["created_at", Tue, 21 Feb 2012 20:37:21 UTC +00:00], ["creation_date", "February, 18, 2012"], ["title", "Lorem Ipsum"], ["updated_at", Tue, 21 Feb 2012 20:37:21 UTC +00:00]]
+Redirected to http://localhost:3000/articles/14
+Completed 302 Found in 131ms
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "14"]]
+Rendered articles/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+Served asset /script_edit.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-02-21 13:37:21 -0700
+Served asset /arrow_left.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 13:37:25 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 57ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /script_add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /script_go.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 13:37:26 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 13:41:49 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /script_add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 13:41:50 -0700
+Served asset /script_go.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2012-02-21 13:41:51 -0700
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "4"]]
+Rendered articles/show.html.erb within layouts/application (205.0ms)
+Completed 500 Internal Server Error in 224ms
+
+ActionView::Template::Error (undefined method `sanatize' for #<#<Class:0x60b4df8>:0x60b29f8>):
+    3: <br />
+    4: <br />
+    5: <br />
+    6: <%= sanatize :body %>
+    7: <%= link_to (image_tag "arrow_left.png"), articles_path %>Back to article list 
+    8: <div class="edit"> 
+    9:   <%= link_to (image_tag "script_edit.png"), edit_article_path(@article) %>Edit     
+  app/views/articles/show.html.erb:6:in `_app_views_articles_show_html_erb___129571000_50695716'
+  app/controllers/articles_controller.rb:18:in `show'
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2012-02-21 13:42:43 -0700
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered articles/show.html.erb within layouts/application (80.0ms)
+Completed 500 Internal Server Error in 97ms
+
+ActionView::Template::Error (undefined method `sanatize' for #<#<Class:0x4b6d530>:0x4b6af20>):
+    22: </p>
+    23: 
+    24: <p>
+    25:   <%= sanatize @article.body %>
+    26: </p>
+  app/views/articles/show.html.erb:25:in `_app_views_articles_show_html_erb___129571000_39498600'
+  app/controllers/articles_controller.rb:18:in `show'
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2012-02-21 13:43:16 -0700
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "4"]]
+Rendered articles/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /arrow_left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/email.png" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /email.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 13:43:17 -0700
+Served asset /script_delete.png - 304 Not Modified (1ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2012-02-21 16:45:44 -0700
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered articles/show.html.erb within layouts/application (293.0ms)
+Compiled articles.css  (56ms)  (pid 6268)
+Compiled application.css  (3ms)  (pid 6268)
+Completed 200 OK in 734ms (Views: 730.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /jquery.js - 200 OK (18ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /scaffolds.css - 200 OK (5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /articles.css - 200 OK (5ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /articles.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /script_edit.png - 200 OK (3ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /arrow_left.png - 200 OK (4ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /script_delete.png - 200 OK (5ms)
+
+
+Started GET "/assets/email.png" for 127.0.0.1 at 2012-02-21 16:45:57 -0700
+Served asset /email.png - 200 OK (3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 16:46:30 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.erb within layouts/application (285.0ms)
+Completed 200 OK in 306ms (Views: 304.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 16:46:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 16:46:31 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 16:46:31 -0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 16:46:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 16:46:31 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 16:46:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 16:46:31 -0700
+Served asset /script_add.png - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 16:46:31 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 16:46:31 -0700
+Served asset /script_go.png - 200 OK (5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 16:46:59 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.erb within layouts/application (35.0ms)
+Compiled articles.css  (12ms)  (pid 6268)
+Compiled application.css  (3ms)  (pid 6268)
+Completed 200 OK in 112ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 16:46:59 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 16:46:59 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 16:46:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 16:46:59 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 16:46:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 16:46:59 -0700
+Served asset /articles.css - 200 OK (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 16:47:00 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 16:47:00 -0700
+Served asset /script_add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 16:47:00 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 16:47:00 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 16:47:00 -0700
+Served asset /script_go.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.erb within layouts/application (34.0ms)
+Compiled articles.css  (10ms)  (pid 6268)
+Compiled application.css  (4ms)  (pid 6268)
+Completed 200 OK in 109ms (Views: 106.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /articles.css - 200 OK (16ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /script_add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /script_go.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 16:47:55 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.erb within layouts/application (56.0ms)
+Compiled articles.css  (11ms)  (pid 6268)
+Compiled application.css  (3ms)  (pid 6268)
+Completed 200 OK in 132ms (Views: 129.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /articles.css - 200 OK (13ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /script_add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /script_go.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 16:49:33 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.erb within layouts/application (33.0ms)
+Compiled articles.css  (9ms)  (pid 6268)
+Compiled application.css  (3ms)  (pid 6268)
+Completed 200 OK in 154ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /articles.css - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /script_go.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 16:49:57 -0700
+Served asset /script_add.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.erb within layouts/application (60.0ms)
+Compiled articles.css  (11ms)  (pid 6268)
+Compiled application.css  (3ms)  (pid 6268)
+Completed 200 OK in 139ms (Views: 136.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /articles.css - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /script_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_add.png" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /script_add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_go.png" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /script_go.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/script_edit.png" for 127.0.0.1 at 2012-02-21 16:50:09 -0700
+Served asset /script_edit.png - 304 Not Modified (0ms)

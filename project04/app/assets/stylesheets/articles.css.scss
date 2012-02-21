@@ -28,16 +28,18 @@
   }
 
   table{
-    border: 3px;
-	overflow: scroll;
+    height: 50px;
+	width: 1000px;
+	border: 1px;
+	overflow: auto;
   }
   
   .list_line_even{
-    background: #e0f8f8;
+    background: #FFFFFF;
   }
   
   .list_line_odd{
-    background: #f8b0f8;
+    background: #DCDCDC;
   }
   
   tr td{
