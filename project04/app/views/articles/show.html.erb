@@ -3,15 +3,15 @@
 <br />
 <br />
 <br />
-<%= link_to (image_tag "arrow_left.png"), articles_path %>Back to article list 
+<%= link_to (image_tag "arrow_left.png"), articles_path, {:title => "Click here to return the the article list"} %>Back to article list 
 <div class="edit"> 
-  <%= link_to (image_tag "script_edit.png"), edit_article_path(@article) %>Edit     
+  <%= link_to (image_tag "script_edit.png"), edit_article_path(@article), {:title => "Click here to edit the article"} %>Edit     
 </div>
 <div class="delete">
-  <%= link_to (image_tag "script_delete.png"), %>Delete
+  <%= link_to (image_tag "script_delete.png"), {:title => "Click here to delete the article"} %>Delete
 </div>
 <div class="email">
-  <%= link_to (image_tag "email.png"), %>Email
+  <%= link_to (image_tag "email.png"), {:title => "Click here to email the article"} %>Email
 </div>
 <p>
   <%= @article.title %>

@@ -4,7 +4,7 @@
 <br />
 <h2>All the World's Articles</h2>
 <div class='add'>
-  <%= link_to (image_tag "script_add.png", :border=>0), new_article_path  %>Create an article
+  <%= link_to (image_tag "script_add.png", :border=>0), new_article_path, {:title => "Click here to create an new article"}  %>Create an article
 </div>
 
 <table>
@@ -37,8 +37,8 @@
 		<dt><%= article.creation_date %></dt>
 	  </dl>
 	</td>
-    <td><%= link_to (image_tag "script_go.png"), article %></td>
-    <td><%= link_to (image_tag "script_edit.png"), edit_article_path(article) %></td>
+    <td><%= link_to (image_tag "script_go.png"), article, {:title => "Click here to go to the article"} %></td>
+    <td><%= link_to (image_tag "script_edit.png"), edit_article_path(article), {:title => "Click here to edit the article"} %></td>
     <td><%= link_to (image_tag "script_delete.png"), article, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
