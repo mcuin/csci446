@@ -1,0 +1,50 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.articles{
+  .add{
+    position: absolute;
+	top: 150px;
+	left: 500px;
+  }
+  
+  .edit{
+    position: absolute;
+	top: 125px;
+	left: 200px;
+  }
+  
+  .delete{
+    position: absolute;
+	top: 125px;
+	left: 300px;
+  }
+  
+  .email{
+    position: absolute;
+	top: 125px;
+	left: 400px;
+  }
+
+  table{
+    height: 50px;
+	width: 1000px;
+	border: 1px;
+	overflow-x: auto;
+  }
+  
+  .list_line_even{
+    background: #FFFFFF;
+  }
+  
+  .list_line_odd{
+    background: #DCDCDC;
+  }
+  
+  tr td{
+    padding: 2px;
+	vertical-align: top;
+  }
+}
+  
