@@ -1,14 +1,14 @@
 1. POST identifies which resource will handle the request, while PUT encloses the entity that is needed to handle the request. 
 2. Relative
-3. The difference between a absolute URL and relative URL is information. An absolute URL will provide more information than a realtive URL will.
-Absolute URLs mostly take the form of protocol://hostname/file/file and is the only way to connect to another server. A realtive URL may take the form 
+3. The difference between a absolute URL and relative URL is information. An absolute URL will provide more information than a relative URL will.
+Absolute URLs mostly take the form of protocol://hostname/file/file and is the only way to connect to another server. A relative URL may take the form 
 of file/file and would be used in linking to a file in the same directory.
-4. GET
+4. GET because it is only talking about the web browser so it it generates the code from the pages and gets what the other two protocols return.
 5. Yes there is as "request_type=PUT" 
 6. The server that is exists on.
 7. The database is the third tier in called storage and its is to recieve queries and send updates to the logic tier. The web browser is the first tier called
 presentation and presents the generated logic tier code to the user in an easy to understand way. 
-8. No becuase it was handled correctly and the only time it would is when there was an error. A third party program handles the body. 
+8. No because it was handled correctly and the only time it would is when there was an error. A third party program handles the body. 
 9. 
 #!/bin/ruby
 
