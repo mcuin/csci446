@@ -36,3 +36,4 @@ group :test do
   gem "minitest"
 end
 
+gem 'will_paginate', '~> 3.0'
