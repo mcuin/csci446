@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.paginate page: params[:page], order: 'created at desc', per_page: 10
+    @articles = Article.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
