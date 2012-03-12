@@ -1,0 +1,109 @@
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "articles" ("title", "author_name", "body", "creation_date", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', 'MyString', '2012-02-20 17:49:10', '2012-02-20 17:49:10', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "articles" ("title", "author_name", "body", "creation_date", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', 'MyString', '2012-02-20 17:49:10', '2012-02-20 17:49:10', 298486374)[0m
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "articles" ("title", "author_name", "body", "creation_date", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', 'MyString', '2012-02-20 17:49:56', '2012-02-20 17:49:56', 980190962)
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO "articles" ("title", "author_name", "body", "creation_date", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', 'MyString', '2012-02-20 17:49:56', '2012-02-20 17:49:56', 298486374)[0m
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  Processing by ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Lorem Ipsum", "author_name"=>"Robert Frost", "body"=>"Wibbles are fun!", "creation_date"=>"February, 20th, 2012"}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (41.0ms)[0m  [1mINSERT INTO "articles" ("author_name", "body", "created_at", "creation_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author_name", "Robert Frost"], ["body", "Wibbles are fun!"], ["created_at", Mon, 20 Feb 2012 17:49:56 UTC +00:00], ["creation_date", "February, 20th, 2012"], ["title", "Lorem Ipsum"], ["updated_at", Mon, 20 Feb 2012 17:49:56 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/articles/980190963
+Completed 302 Found in 53ms
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/articles
+Completed 302 Found in 4ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "980190962"]]
+Rendered articles/_form.html.erb (27.0ms)
+Completed 200 OK in 465ms (Views: 464.0ms | ActiveRecord: 0.0ms)
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Completed 200 OK in 177ms (Views: 176.0ms | ActiveRecord: 0.0ms)
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (4.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"title"=>"Lorem Ipsum", "author_name"=>"Robert Frost", "body"=>"Wibbles are fun!", "creation_date"=>"February, 20th, 2012"}, "id"=>"980190962"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "articles" SET "title" = 'Lorem Ipsum', "author_name" = 'Robert Frost', "body" = 'Wibbles are fun!', "creation_date" = 'February, 20th, 2012', "updated_at" = '2012-02-20 17:49:57.583643' WHERE "articles"."id" = 980190962[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/articles/980190962
+Completed 302 Found in 6ms
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "articles" ("title", "author_name", "body", "creation_date", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', 'MyString', '2012-03-11 18:02:15', '2012-03-11 18:02:15', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "articles" ("title", "author_name", "body", "creation_date", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', 'MyString', '2012-03-11 18:02:15', '2012-03-11 18:02:15', 298486374)[0m
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "articles" ("title", "author_name", "body", "creation_date", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', 'MyString', '2012-03-11 18:03:03', '2012-03-11 18:03:03', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "articles" ("title", "author_name", "body", "creation_date", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', 'MyString', '2012-03-11 18:03:03', '2012-03-11 18:03:03', 298486374)[0m
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  Processing by ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Lorem Ipsum", "author_name"=>"Robert Frost", "body"=>"Wibbles are fun!", "creation_date"=>"February, 20th, 2012"}}
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (86.0ms)[0m  [1mINSERT INTO "articles" ("author_name", "body", "created_at", "creation_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author_name", "Robert Frost"], ["body", "Wibbles are fun!"], ["created_at", Sun, 11 Mar 2012 18:03:04 UTC +00:00], ["creation_date", "February, 20th, 2012"], ["title", "Lorem Ipsum"], ["updated_at", Sun, 11 Mar 2012 18:03:04 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/articles/980190963
+Completed 302 Found in 120ms
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/articles
+Completed 302 Found in 4ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "980190962"]]
+Rendered articles/_form.html.erb (5.0ms)
+Completed 200 OK in 532ms (Views: 531.0ms | ActiveRecord: 0.0ms)
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (4.0ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "980190962"]]
+Completed 200 OK in 243ms (Views: 242.0ms | ActiveRecord: 0.0ms)
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"title"=>"Lorem Ipsum", "author_name"=>"Robert Frost", "body"=>"Wibbles are fun!", "creation_date"=>"February, 20th, 2012"}, "id"=>"980190962"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "articles" SET "title" = 'Lorem Ipsum', "author_name" = 'Robert Frost', "body" = 'Wibbles are fun!', "creation_date" = 'February, 20th, 2012', "updated_at" = '2012-03-11 18:03:05.302962' WHERE "articles"."id" = 980190962
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/articles/980190962
+Completed 302 Found in 7ms
