@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :author_name %><br />
-    <%= f.text_field :author_name %>
+    <%= f.select :author_name, Author.all.collect {|t| [t.name, t.id] }, {prompt: "--Select an Author--"} %>
   </div>
   <div class="field">
     <%= f.label :body %><br />

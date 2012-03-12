@@ -14970,3 +14970,1313 @@ Migrating to AddAttachmentPhotoToAuthor (20120312224613)
   [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("articles")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("authors")[0m
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-12 16:50:06 -0600
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNdl1Od/Br+mXnRCvFZO43fj4+sD7CiGpUk7PhIwy/c=", "author"=>{"name"=>"Robert Frost", "photo"=>#<ActionDispatch::Http::UploadedFile:0x37ba248 @original_filename="460px-Robert_Frost_NYWTS.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"author[photo]\"; filename=\"460px-Robert_Frost_NYWTS.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Mykal/AppData/Local/Temp/RackMultipart20120312-180-n33x46>>}, "commit"=>"Create Author"}
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Mykal/AppData/Local/Temp/stream20120312-180-4byufr.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Mykal/AppData/Local/Temp/stream20120312-180-4byufr.jpg is not recognized by the 'identify' command.>
+Rendered authors/_form.html.erb (4.0ms)
+Rendered authors/new.html.erb within layouts/application (192.0ms)
+Completed 200 OK in 888ms (Views: 581.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 16:50:29 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 16:50:29 -0600
+Served asset /authors.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 16:50:29 -0600
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 16:50:29 -0600
+Served asset /articles.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 16:50:30 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 16:50:30 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 16:50:30 -0600
+Served asset /articles.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 16:50:30 -0600
+Served asset /authors.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 16:50:30 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-12 16:51:39 -0600
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNdl1Od/Br+mXnRCvFZO43fj4+sD7CiGpUk7PhIwy/c=", "author"=>{"name"=>"Robert Frost", "photo"=>#<ActionDispatch::Http::UploadedFile:0x5c691f0 @original_filename="rails.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[photo]\"; filename=\"rails.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Mykal/AppData/Local/Temp/RackMultipart20120312-180-pm801c>>}, "commit"=>"Create Author"}
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Mykal/AppData/Local/Temp/stream20120312-180-12h8f29.png[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Mykal/AppData/Local/Temp/stream20120312-180-12h8f29.png is not recognized by the 'identify' command.>
+Rendered authors/_form.html.erb (6.0ms)
+Rendered authors/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 144ms (Views: 62.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 16:51:40 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 16:51:40 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 16:51:40 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 16:51:40 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 16:51:40 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 16:51:40 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 16:51:40 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 16:51:40 -0600
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 16:51:40 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-12 16:57:43 -0600
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+Rendered articles/index.html.erb within layouts/application (486.0ms)
+Completed 200 OK in 536ms (Views: 533.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 16:57:43 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 16:57:43 -0600
+Served asset /articles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 16:57:43 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 16:57:43 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 16:57:43 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 16:57:43 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 16:57:43 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 16:57:43 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 16:57:43 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (12.0ms)
+Rendered articles/new.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+Served asset /articles.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-03-12 16:57:50 -0600
+Served asset /arrow_left.png - 200 OK (3ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2012-03-12 16:59:09 -0600
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (11.0ms)
+Rendered authors/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 16:59:09 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 16:59:09 -0600
+Served asset /articles.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 16:59:09 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 16:59:09 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 16:59:09 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 16:59:09 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 16:59:09 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 16:59:09 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 16:59:09 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-12 16:59:18 -0600
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNdl1Od/Br+mXnRCvFZO43fj4+sD7CiGpUk7PhIwy/c=", "author"=>{"name"=>"Robert Frost", "photo"=>#<ActionDispatch::Http::UploadedFile:0x48b5f98 @original_filename="script_delete.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[photo]\"; filename=\"script_delete.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Mykal/AppData/Local/Temp/RackMultipart20120312-180-ch4jkt>>}, "commit"=>"Create Author"}
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Mykal/AppData/Local/Temp/stream20120312-180-1njslw7.png[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Mykal/AppData/Local/Temp/stream20120312-180-1njslw7.png is not recognized by the 'identify' command.>
+Rendered authors/_form.html.erb (3.0ms)
+Rendered authors/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 124ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 16:59:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 16:59:18 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 16:59:18 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 16:59:18 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 16:59:18 -0600
+Served asset /articles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 16:59:18 -0600
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 16:59:18 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 16:59:18 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 16:59:18 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-12 17:05:31 -0600
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNdl1Od/Br+mXnRCvFZO43fj4+sD7CiGpUk7PhIwy/c=", "author"=>{"name"=>"Robert Frost", "photo"=>#<ActionDispatch::Http::UploadedFile:0x36f33d8 @original_filename="script_delete.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[photo]\"; filename=\"script_delete.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Mykal/AppData/Local/Temp/RackMultipart20120312-4344-uy6orj>>}, "commit"=>"Create Author"}
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Mykal/AppData/Local/Temp/stream20120312-4344-av52ul.png[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Mykal/AppData/Local/Temp/stream20120312-4344-av52ul.png is not recognized by the 'identify' command.>
+Rendered authors/_form.html.erb (4.0ms)
+Rendered authors/new.html.erb within layouts/application (187.0ms)
+Completed 200 OK in 699ms (Views: 557.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:05:53 -0600
+Served asset /articles.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:05:53 -0600
+Served asset /authors.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:05:53 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:05:53 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:05:53 -0600
+Served asset /authors.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:05:53 -0600
+Served asset /articles.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:05:53 -0600
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:05:53 -0600
+Served asset /jquery.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:05:53 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-12 17:11:32 -0600
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+Rendered articles/index.html.erb within layouts/application (482.0ms)
+Completed 200 OK in 504ms (Views: 502.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:11:33 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:11:33 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:11:33 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:11:33 -0600
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:11:33 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:11:33 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:11:33 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:11:33 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:11:33 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-12 17:11:37 -0600
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (246.0ms)
+Rendered articles/new.html.erb within layouts/application (251.0ms)
+Completed 500 Internal Server Error in 270ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 2)):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :author_name %><br />
+    20:     <%= f.select(:author_name) %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :body %><br />
+  app/views/articles/_form.html.erb:20:in `block in _app_views_articles__form_html_erb__410731138_39733896'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__410731138_39733896'
+  app/views/articles/new.html.erb:10:in `_app_views_articles_new_html_erb___807331799_39748080'
+  app/controllers/articles_controller.rb:29:in `new'
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-12 17:11:51 -0600
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (13.0ms)
+Rendered articles/new.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :author_name %><br />
+    20:     <%= f.select(:author_name, @author) %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :body %><br />
+  app/views/articles/_form.html.erb:20:in `block in _app_views_articles__form_html_erb__410731138_39729348'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__410731138_39729348'
+  app/views/articles/new.html.erb:10:in `_app_views_articles_new_html_erb___807331799_39748080'
+  app/controllers/articles_controller.rb:29:in `new'
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-12 17:13:35 -0600
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (13.0ms)
+Rendered articles/new.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :author_name %><br />
+    20:     <%= f.select(:author_name, @author) %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :body %><br />
+  app/views/articles/_form.html.erb:20:in `block in _app_views_articles__form_html_erb__410731138_39729348'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__410731138_39729348'
+  app/views/articles/new.html.erb:10:in `_app_views_articles_new_html_erb___807331799_39748080'
+  app/controllers/articles_controller.rb:29:in `new'
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-12 17:17:22 -0600
+  Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered authors/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:23 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:23 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:23 -0600
+Served asset /articles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:23 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:23 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:23 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:23 -0600
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:23 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:23 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2012-03-12 17:17:24 -0600
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (13.0ms)
+Rendered authors/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:24 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:24 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:24 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:24 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:24 -0600
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:24 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:24 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:24 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:24 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-12 17:17:28 -0600
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNdl1Od/Br+mXnRCvFZO43fj4+sD7CiGpUk7PhIwy/c=", "author"=>{"name"=>"nksnc;cnnccn;c"}, "commit"=>"Create Author"}
+  [1m[35mSQL (46.0ms)[0m  INSERT INTO "authors" ("created_at", "name", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Mar 2012 23:17:28 UTC +00:00], ["name", "nksnc;cnnccn;c"], ["photo_content_type", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["photo_updated_at", nil], ["updated_at", Mon, 12 Mar 2012 23:17:28 UTC +00:00]]
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/authors/1
+Completed 302 Found in 62ms
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2012-03-12 17:17:28 -0600
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered authors/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+Served asset /authors.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+Served asset /authors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/photos/small/missing.png" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+
+ActionController::RoutingError (No route matches [GET] "/photos/small/missing.png"):
+  
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/photos/small/missing.png" for 127.0.0.1 at 2012-03-12 17:17:29 -0600
+
+ActionController::RoutingError (No route matches [GET] "/photos/small/missing.png"):
+  
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-12 17:17:33 -0600
+  Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered authors/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:33 -0600
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:33 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:33 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:33 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:33 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:33 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:33 -0600
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:33 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:33 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-12 17:17:39 -0600
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" LIMIT 10 OFFSET 0[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+Rendered articles/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:39 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:39 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:39 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:17:39 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:39 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:39 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:40 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:17:40 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-12 17:17:41 -0600
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (14.0ms)
+Rendered articles/new.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :author_name %><br />
+    20:     <%= f.select(:author_name, @author) %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :body %><br />
+  app/views/articles/_form.html.erb:20:in `block in _app_views_articles__form_html_erb__410731138_39729348'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__410731138_39729348'
+  app/views/articles/new.html.erb:10:in `_app_views_articles_new_html_erb___807331799_39748080'
+  app/controllers/articles_controller.rb:29:in `new'
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-12 17:18:36 -0600
+  Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered authors/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:36 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:36 -0600
+Served asset /articles.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:36 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:36 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:36 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:36 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:36 -0600
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:36 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:37 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2012-03-12 17:18:38 -0600
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (13.0ms)
+Rendered authors/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:38 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:38 -0600
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:38 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:38 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:38 -0600
+Served asset /authors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:38 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:38 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:38 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:38 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-12 17:18:54 -0600
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNdl1Od/Br+mXnRCvFZO43fj4+sD7CiGpUk7PhIwy/c=", "author"=>{"name"=>"Robert Frost", "photo"=>#<ActionDispatch::Http::UploadedFile:0x4bcbc70 @original_filename="460px-Robert_Frost_NYWTS.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"author[photo]\"; filename=\"460px-Robert_Frost_NYWTS.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Mykal/AppData/Local/Temp/RackMultipart20120312-4344-56mn8k>>}, "commit"=>"Create Author"}
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Mykal/AppData/Local/Temp/stream20120312-4344-187edel.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Mykal/AppData/Local/Temp/stream20120312-4344-187edel.jpg is not recognized by the 'identify' command.>
+Rendered authors/_form.html.erb (4.0ms)
+Rendered authors/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 121ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:54 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:54 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:54 -0600
+Served asset /articles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:54 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:54 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:54 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:54 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:54 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:54 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNdl1Od/Br+mXnRCvFZO43fj4+sD7CiGpUk7PhIwy/c=", "author"=>{"name"=>"Robert Frost"}, "commit"=>"Create Author"}
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "authors" ("created_at", "name", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Mar 2012 23:18:57 UTC +00:00], ["name", "Robert Frost"], ["photo_content_type", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["photo_updated_at", nil], ["updated_at", Mon, 12 Mar 2012 23:18:57 UTC +00:00]]
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/authors/2
+Completed 302 Found in 22ms
+
+
+Started GET "/authors/2" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered authors/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+Served asset /authors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/photos/small/missing.png" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+
+ActionController::RoutingError (No route matches [GET] "/photos/small/missing.png"):
+  
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/photos/small/missing.png" for 127.0.0.1 at 2012-03-12 17:18:57 -0600
+
+ActionController::RoutingError (No route matches [GET] "/photos/small/missing.png"):
+  
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/authors/2/edit" for 127.0.0.1 at 2012-03-12 17:18:59 -0600
+  Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered authors/_form.html.erb (11.0ms)
+Rendered authors/edit.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:59 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:59 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:59 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:59 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:18:59 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:59 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:59 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:59 -0600
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:18:59 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-12 17:19:00 -0600
+  Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered authors/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:19:01 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:19:01 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:19:01 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:19:01 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:19:01 -0600
+Served asset /articles.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:19:01 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:19:01 -0600
+Served asset /authors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:19:01 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:19:01 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2012-03-12 17:26:51 -0600
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (12.0ms)
+Rendered authors/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:26:52 -0600
+Served asset /application.css - 304 Not Modified (35ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:26:52 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:26:52 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:26:52 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:26:52 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:26:52 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:26:52 -0600
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:26:52 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:26:52 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNdl1Od/Br+mXnRCvFZO43fj4+sD7CiGpUk7PhIwy/c=", "author"=>{"name"=>"Robert Frost", "photo"=>#<ActionDispatch::Http::UploadedFile:0x3fc8850 @original_filename="460px-Robert_Frost_NYWTS.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"author[photo]\"; filename=\"460px-Robert_Frost_NYWTS.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Mykal/AppData/Local/Temp/RackMultipart20120312-4344-byiijq>>}, "commit"=>"Create Author"}
+Binary data inserted for `string` type on column `photo_content_type`
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "authors" ("created_at", "name", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Mar 2012 23:27:02 UTC +00:00], ["name", "Robert Frost"], ["photo_content_type", "image/jpeg"], ["photo_file_name", "460px-Robert_Frost_NYWTS.jpg"], ["photo_file_size", 30599], ["photo_updated_at", Mon, 12 Mar 2012 23:27:02 UTC +00:00], ["updated_at", Mon, 12 Mar 2012 23:27:02 UTC +00:00]]
+[paperclip] Saving attachments.
+[paperclip] saving c:/Users/Mykal/Documents/cs446/src/project05/project04/public/system/photos/3/original/460px-Robert_Frost_NYWTS.jpg
+Redirected to http://localhost:3000/authors/3
+Completed 302 Found in 93ms
+
+
+Started GET "/authors/3" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Rendered authors/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+Served asset /articles.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+Served asset /articles.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/system/photos/3/small/460px-Robert_Frost_NYWTS.jpg?1331594822" for 127.0.0.1 at 2012-03-12 17:27:02 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/3/small/460px-Robert_Frost_NYWTS.jpg"):
+  
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-12 17:27:05 -0600
+  Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered authors/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:05 -0600
+Served asset /articles.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:05 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:05 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:05 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:05 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:05 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:05 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:05 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:05 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-12 17:27:53 -0600
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+Rendered articles/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:53 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:53 -0600
+Served asset /articles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:53 -0600
+Served asset /authors.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:53 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:27:53 -0600
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:53 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:53 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:53 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:27:53 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-12 17:27:55 -0600
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (13.0ms)
+Rendered articles/new.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :author_name %><br />
+    20:     <%= f.select(:author_name, @author) %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :body %><br />
+  app/views/articles/_form.html.erb:20:in `block in _app_views_articles__form_html_erb__410731138_39729348'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__410731138_39729348'
+  app/views/articles/new.html.erb:10:in `_app_views_articles_new_html_erb___807331799_39748080'
+  app/controllers/articles_controller.rb:29:in `new'
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+  Processing by ArticlesController#new as HTML
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered articles/_form.html.erb (46.0ms)
+Rendered articles/new.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 76ms (Views: 73.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+Served asset /articles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+Served asset /authors.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-03-12 17:29:40 -0600
+Served asset /arrow_left.png - 304 Not Modified (4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+  Processing by ArticlesController#new as HTML
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.erb (44.0ms)
+Rendered articles/new.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+Served asset /articles.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-03-12 17:30:25 -0600
+Served asset /arrow_left.png - 304 Not Modified (0ms)
