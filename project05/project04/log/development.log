@@ -14856,3 +14856,117 @@ Served asset /script_edit.png - 200 OK (19ms)
 
 Started GET "/assets/script_delete.png" for 127.0.0.1 at 2012-03-12 15:15:32 -0600
 Served asset /script_delete.png - 200 OK (23ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-12 15:21:13 -0600
+  Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered authors/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 452ms (Views: 450.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 15:21:27 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 15:21:27 -0600
+Served asset /authors.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 15:21:27 -0600
+Served asset /articles.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 15:21:27 -0600
+Served asset /authors.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 15:21:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 15:21:27 -0600
+Served asset /articles.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 15:21:27 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 15:21:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 15:21:27 -0600
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2012-03-12 15:21:44 -0600
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (10.0ms)
+Rendered authors/new.html.erb within layouts/application (155.0ms)
+Completed 200 OK in 179ms (Views: 178.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-12 15:21:44 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-12 15:21:44 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at 2012-03-12 15:21:44 -0600
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-12 15:21:44 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-03-12 15:21:44 -0600
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-12 15:21:44 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-03-12 15:21:44 -0600
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-12 15:21:44 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at 2012-03-12 15:21:44 -0600
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-12 15:22:08 -0600
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNdl1Od/Br+mXnRCvFZO43fj4+sD7CiGpUk7PhIwy/c=", "author"=>{"name"=>"Robert Frost", "photo"=>#<ActionDispatch::Http::UploadedFile:0x4984e78 @original_filename="460px-Robert_Frost_NYWTS.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"author[photo]\"; filename=\"460px-Robert_Frost_NYWTS.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Mykal/AppData/Local/Temp/RackMultipart20120312-5236-ihspn7>>}, "commit"=>"Create Author"}
+Completed 500 Internal Server Error in 6ms
+
+Paperclip::PaperclipError (Author model missing required attr_accessor for 'photo_file_name'):
+  app/controllers/authors_controller.rb:43:in `new'
+  app/controllers/authors_controller.rb:43:in `create'
+
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (35.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateArticles (20120219043727)
+Migrating to CreateAuthors (20120311182926)
+Migrating to AddAttachmentPhotoToAuthor (20120312224613)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (2.0ms)[0m  [1mALTER TABLE "authors" ADD "photo_file_name" varchar(255)[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "authors" ADD "photo_content_type" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "authors" ADD "photo_file_size" integer[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "authors" ADD "photo_updated_at" datetime
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120312224613')[0m
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("articles")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("authors")[0m
