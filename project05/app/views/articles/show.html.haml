@@ -1,0 +1,25 @@
+%p#notice= notice
+%center
+  %h1 Articl.es
+%br/
+%br/
+%br/
+%br/
+= link_to (image_tag "arrow_left.png"), articles_path, {:title => "Click here to return the the article list"}
+Back to article list
+.edit
+  = link_to (image_tag "script_edit.png"), edit_article_path(@article), {:title => "Click here to edit the article"}
+  Edit
+.delete
+  = link_to (image_tag "script_delete.png"), {:title => "Click here to delete the article"}
+  Delete
+.email
+  = link_to (image_tag "email.png"), {:title => "Click here to email the article"}
+  Email
+%p
+  = @article.title
+%p
+  by #{@article.author_name}. #{@article.creation_date}
+%p
+  = sanitize @article.body
+

@@ -1,0 +1,35 @@
+%center
+  %h1 Articl.es
+%br/
+%br/
+%br/
+%br/
+%h2 All the World's Articles
+.add
+  = link_to (image_tag "script_add.png", :border=>0), new_article_path, {:title => "Click here to create an new article"}
+  Create an article
+%table
+  %tr
+    %td Title
+    %td Author Name
+    %td Content
+    %td Creation Date
+  - @articles.each do |article|
+    %tr{:class => cycle('list_line_odd', 'list_line_even')}
+      %td
+        %dl
+          %dt= article.title
+      %td
+        %dl
+          %dt= Author.find_by_id(article.author_name)
+      %td
+        %dl
+          %dd= truncate(strip_tags(article.body), length: 25)
+      %td
+        %dl
+          %dt= article.creation_date
+      %td= link_to (image_tag "script_go.png"), article, {:title => "Click here to go to the article"}
+      %td= link_to (image_tag "script_edit.png"), edit_article_path(article), {:title => "Click here to edit the article"}
+      %td= link_to (image_tag "script_delete.png"), article, confirm: 'Are you sure?', method: :delete
+%br/
+%p= will_paginate @articles
