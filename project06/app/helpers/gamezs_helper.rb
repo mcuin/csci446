@@ -1,0 +1,2 @@
+module GamezsHelper
+end

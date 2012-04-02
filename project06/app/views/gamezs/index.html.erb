@@ -1,0 +1,27 @@
+<h1>Listing gamezs</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Rating</th>
+    <th>Date added</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gamezs.each do |gamez| %>
+  <tr>
+    <td><%= gamez.title %></td>
+    <td><%= gamez.rating %></td>
+    <td><%= gamez.date_added %></td>
+    <td><%= link_to 'Show', gamez %></td>
+    <td><%= link_to 'Edit', edit_gamez_path(gamez) %></td>
+    <td><%= link_to 'Destroy', gamez, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gamez', new_gamez_path %>

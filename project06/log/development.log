@@ -1,0 +1,177 @@
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (5.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (5.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateGamezs (20120402052515)
+  [1m[35m (1.0ms)[0m  CREATE TABLE "gamezs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "date_added" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120402052515')[0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("gamezs")
+
+
+Started GET "/gamezs" for 127.0.0.1 at 2012-04-01 23:31:52 -0600
+  Processing by GamezsController#index as HTML
+  [1m[36mGamez Load (1.0ms)[0m  [1mSELECT "gamezs".* FROM "gamezs" [0m
+Rendered gamezs/index.html.erb within layouts/application (144.0ms)
+Compiled application.css  (3ms)  (pid 5080)
+Compiled gamezs.css  (19ms)  (pid 5080)
+Compiled scaffolds.css  (49ms)  (pid 5080)
+Compiled application.js  (65ms)  (pid 5080)
+Compiled jquery.js  (72ms)  (pid 5080)
+Compiled jquery_ujs.js  (10ms)  (pid 5080)
+Compiled gamezs.js  (21197ms)  (pid 5080)
+Completed 200 OK in 22593ms (Views: 22591.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-01 23:32:31 -0600
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/gamezs.css?body=1" for 127.0.0.1 at 2012-04-01 23:32:31 -0600
+Served asset /gamezs.css - 200 OK (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-01 23:32:31 -0600
+Served asset /scaffolds.css - 200 OK (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-01 23:32:31 -0600
+Served asset /jquery_ujs.js - 200 OK (39ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-01 23:32:31 -0600
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/gamezs.js?body=1" for 127.0.0.1 at 2012-04-01 23:32:31 -0600
+Served asset /gamezs.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-01 23:32:31 -0600
+Served asset /jquery.js - 200 OK (12ms)
+
+
+Started GET "/gamezs/new" for 127.0.0.1 at 2012-04-01 23:33:08 -0600
+  Processing by GamezsController#new as HTML
+Rendered gamezs/_form.html.erb (36.0ms)
+Rendered gamezs/new.html.erb within layouts/application (202.0ms)
+Completed 200 OK in 230ms (Views: 228.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-01 23:33:09 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gamezs.css?body=1" for 127.0.0.1 at 2012-04-01 23:33:09 -0600
+Served asset /gamezs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:09 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-01 23:33:09 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:09 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:09 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gamezs.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:09 -0600
+Served asset /gamezs.js - 304 Not Modified (0ms)
+
+
+Started POST "/gamezs" for 127.0.0.1 at 2012-04-01 23:33:45 -0600
+  Processing by GamezsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PXilsKbAuYbZNcKRuI2KqAr3aOVcc5fxrTLVyljA17o=", "gamez"=>{"title"=>"Its Me Not You", "rating"=>"Horrible", "date_added"=>"4/1/2012 Mykal Cuin"}, "commit"=>"Create Gamez"}
+  [1m[35mSQL (303.0ms)[0m  INSERT INTO "gamezs" ("created_at", "date_added", "rating", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 02 Apr 2012 05:33:45 UTC +00:00], ["date_added", "4/1/2012 Mykal Cuin"], ["rating", "Horrible"], ["title", "Its Me Not You"], ["updated_at", Mon, 02 Apr 2012 05:33:45 UTC +00:00]]
+Redirected to http://localhost:3000/gamezs/1
+Completed 302 Found in 317ms
+
+
+Started GET "/gamezs/1" for 127.0.0.1 at 2012-04-01 23:33:46 -0600
+  Processing by GamezsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGamez Load (0.0ms)[0m  [1mSELECT "gamezs".* FROM "gamezs" WHERE "gamezs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered gamezs/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 43ms (Views: 37.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-01 23:33:46 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:46 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-01 23:33:46 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:46 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gamezs.css?body=1" for 127.0.0.1 at 2012-04-01 23:33:46 -0600
+Served asset /gamezs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gamezs.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:46 -0600
+Served asset /gamezs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:46 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/gamezs" for 127.0.0.1 at 2012-04-01 23:33:49 -0600
+  Processing by GamezsController#index as HTML
+  [1m[35mGamez Load (0.0ms)[0m  SELECT "gamezs".* FROM "gamezs" 
+Rendered gamezs/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:49 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:49 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:49 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-01 23:33:49 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-01 23:33:49 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gamezs.css?body=1" for 127.0.0.1 at 2012-04-01 23:33:49 -0600
+Served asset /gamezs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gamezs.js?body=1" for 127.0.0.1 at 2012-04-01 23:33:49 -0600
+Served asset /gamezs.js - 304 Not Modified (0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateGamezs (20120402052515)
+Migrating to CreateUsers (20120402053620)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password_digest" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120402053620')
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("gamezs")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @gamez.title %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @gamez.rating %>
+</p>
+
+<p>
+  <b>Date added:</b>
+  <%= @gamez.date_added %>
+</p>
+
+
+<%= link_to 'Edit', edit_gamez_path(@gamez) %> |
+<%= link_to 'Back', gamezs_path %>
