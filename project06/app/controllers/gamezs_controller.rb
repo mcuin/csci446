@@ -1,6 +1,9 @@
 class GamezsController < ApplicationController
   # GET /gamezs
   # GET /gamezs.json
+  
+  skip_before_filter :authorize
+  
   def index
     @gamezs = Gamez.all
 
