@@ -11,8 +11,12 @@ function guessCall() {
 	$('div#highScores').empty();
 	highScores.push([guessesLeft, name]);
 	populateHighScores(highScores);
-	scores.sort();
-	sort.reverse();
+	var con = confirm("Would you like to play again?");
+	if (con == true) {
+	  playAgain();
+	} else {
+	  return;
+	}
   }
   if (guess > number) {
     alert("Your guess is too high!");
@@ -22,6 +26,13 @@ function guessCall() {
   }
   if (guessesLeft == 0) {
     alert("You have no more guesses left.")
+	var con = confirm("Would you like to play again?");
+	if (con == true) {
+	  playAgain();
+	} else {
+	  return;
+	}
+  }
   }	
   updateScore(guessesLeft);
 }
