@@ -5,7 +5,7 @@
   <link href="screen.css" media="screen" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="main.js"></script>
+  <script type = "text/javascript" src="main.js"></script>
 </head>
 <body>
 
@@ -16,11 +16,12 @@
 <form id="guessTheNumber">
   <input type="text" size="3" name="guess" id="guess">
   <br>
-  <input type="button" id="btnGuess" value="Guess!">
+  <input type="button" id="btnGuess" value="Guess!" onclick="guessCall()">
 </form>
 
 <h2><span class="highScore">High</span> Scores</h2>
 <div id="highScores"></div>
+
 
 </body>  
 </html>
