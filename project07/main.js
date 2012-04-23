@@ -4,8 +4,9 @@ var highScores = new Array([9, "HarryJamesPotter"], [3, "ZedCthulhu"], [2, "Near
 
 function guessCall() {
   var guess = document.forms.guessTheNumber.guess.value;
+  guessesLeft--;
   if (guess == number) {
-    alert("You have guessed the corret answer!");
+    alert("You have guessed the correct answer!");
   }
   if (guess > number) {
     alert("Your guess is too high!");
@@ -13,12 +14,11 @@ function guessCall() {
   if (guess < number) {
     alert("Your guess is too low!");
   }
-  guessesLeft--;
   if (guessesLeft == 0) {
-    $("You have no more guesses left.")
+    alert("You have no more guesses left.")
   }	
+  updateScore(guessesLeft);
 }
-
 $(function() {
   updateScore(guessesLeft);
   populateHighScores(highScores);
@@ -31,5 +31,5 @@ function populateHighScores(scores) {
 }
 
 function updateScore(score) {
-  $('h2#score span#guessesLeft').append(score);
+  $('h2#score span#guessesLeft').text(score);
 }
