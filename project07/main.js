@@ -16,6 +16,7 @@ function guessCall() {
 	} else {
 	  $('#guessTheNumber').fadeOut('slow');
 	}
+  alert('You may now leave.');
   }
   if (guess > number) {
     alert("Your guess is too high!");
@@ -29,8 +30,9 @@ function guessCall() {
 	if (con == true) {
 	  playAgain();
 	} else {
-	  $('#guessTheNumber').fadeOut('slow', 0);
+	  $('#guessTheNumber').fadeOut('slow');
 	}
+  alert('You have taken your last guess. Now sit and wait for your doom.');
   }
   updateScore(guessesLeft);
 }	
