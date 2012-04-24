@@ -10,12 +10,11 @@ function guessCall() {
 	var name = prompt("Please enter your name or nickname for the high scores.");
 	$('div#highScores').empty();
 	highScores.push([guessesLeft, name]);
-	populateHighScores(highScores);
 	var con = confirm("Would you like to play again?");
 	if (con == true) {
 	  playAgain();
 	} else {
-	  return;
+	  $('#guessTheNumber').fadeOut('slow');
 	}
   }
   if (guess > number) {
@@ -30,12 +29,11 @@ function guessCall() {
 	if (con == true) {
 	  playAgain();
 	} else {
-	  return;
+	  $('#guessTheNumber').fadeOut('slow', 0);
 	}
   }
-  }	
   updateScore(guessesLeft);
-}
+}	
 
 function playAgain() {
   guessesLeft = 10;
